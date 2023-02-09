@@ -259,6 +259,9 @@ header.main-header {
 }
 
 .address-links {
+  transition-property: color;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--text-link-color);
@@ -784,4 +787,29 @@ footer .logo {
       height: 294px;
     }
   }
+}
+
+.work-example__textoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 95px;
+
+  p {
+    color: var(--text-white-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    font-family: var(--main-font-family);
+
+    text-transform: uppercase;
+  }
+}
+
+.work-example__li {
+  position: relative;
 }

@@ -259,6 +259,14 @@ header.main-header .logo {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.address-links {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition: ease-in 250ms;
+  transition: ease-in 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .address-links:hover, .address-links:focus {
   color: var(--text-link-color);
 }
@@ -881,4 +889,27 @@ footer .logo {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 294px;
+}
+
+.work-example__textoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 95px;
+}
+.work-example__textoverlay p {
+  color: var(--text-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  font-family: var(--main-font-family);
+  text-transform: uppercase;
+}
+
+.work-example__li {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
