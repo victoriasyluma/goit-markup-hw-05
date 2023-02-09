@@ -175,6 +175,9 @@ header.main-header {
   width: 216px;
   height: 50px;
   border: 1px solid transparent;
+  transition-property: background-color, box-shadow;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -235,6 +238,9 @@ header.main-header {
     font-style: normal;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+    transition-property: color;
+    transition: ease-in 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -259,6 +265,9 @@ header.main-header {
   font-size: 16px;
   line-height: calc(26 / 16);
   padding: 8px 22px;
+  transition-property: background-color, box-shadow;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -530,6 +539,15 @@ footer .logo {
   justify-content: center;
   align-items: center;
   border: none;
+  transition-property: background-color, box-shadow;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-team-link {
+  transition-property: fill;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .static-color {
@@ -554,6 +572,14 @@ footer .logo {
   justify-content: center;
   align-items: center;
   outline: transparent;
+  transition-property: border-color;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-clients-logo {
+  transition-property: fill;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex {
@@ -590,8 +616,16 @@ footer .logo {
   justify-content: center;
   align-items: center;
   border: none;
+  transition-property: background-color;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-team-link {
+  transition-property: fill;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .static-color-footer {
   fill: rgba(255, 255, 255, 1);
 }
@@ -619,6 +653,9 @@ footer .logo {
   text-decoration: none;
   outline: transparent;
   display: block;
+  transition-property: box-shadow;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
