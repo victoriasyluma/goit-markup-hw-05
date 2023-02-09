@@ -120,6 +120,20 @@ header.main-header {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  position: relative;
+
+  &.span-blue::after {
+    content: '';
+
+    position: absolute;
+    background-color: var(--text-link-color);
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .main-page {
@@ -176,7 +190,7 @@ header.main-header {
   height: 50px;
   border: 1px solid transparent;
   transition-property: background-color, box-shadow;
-  transition: ease-in 250ms;
+  transition: ease-in 250s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -692,7 +706,7 @@ footer .logo {
 
 @keyframes scale_down {
   10% {
-    transform: scale(0);
+    transform: scale(1.2);
   }
 
   100% {
